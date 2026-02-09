@@ -1,75 +1,79 @@
-# React + TypeScript + Vite
+# Aether Hotel 🏨✨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-blue)
+![GSAP](https://img.shields.io/badge/GSAP-green)
+![Tailwind](https://img.shields.io/badge/Tailwind_CSS-cyan)
 
-Currently, two official plugins are available:
+**Aether Hotel** is a cinematic luxury hotel website built as a high-end front-end motion showcase.
+The project focuses on immersive UI storytelling, extreme GSAP animations, and smooth user experience inspired by premium hospitality brands.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is not a template or a clone. It’s a deliberate exploration of motion, depth, and visual hierarchy.
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The website is divided into **7 immersive, fully animated sections**:
 
-## Expanding the ESLint configuration
+### Hero Section
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Cinematic entrance featuring a Ken Burns effect, split-text character animations, layered parallax scrolling, and a floating scroll indicator.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### About Section
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Clip-path image reveals, staggered content animations, animated statistics counters, and refined decorative motion elements.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Suites Section
+
+Horizontal scrolling suite cards with 3D rotation effects, hover transformations, and animated progress indicators.
+
+### Experience Section
+
+Featured spa showcase with parallax imagery and animated grid cards using alternating motion patterns.
+
+### Dining Section
+
+Alternating layouts with clip-path reveals, image parallax effects, and animated award badges.
+
+### Testimonials Section
+
+Auto-advancing slider with smooth transitions, motion-timed slides, and animated star ratings.
+
+### Contact Section
+
+Fully animated contact form with interactive inputs, submission feedback, and motion-enhanced info cards.
+
+## 🛠 Tech Stack
+
+* React (Vite)
+* Tailwind CSS
+* GSAP
+* Modern motion principles
+* Performance-focused animation orchestration
+
+## 🎯 Purpose
+
+This project was built as a **portfolio-level front-end showcase** to demonstrate:
+
+* Advanced animation control
+* High-end UI/UX execution
+* Motion storytelling
+* Clean component structure with expressive visuals
+
+## 🚀 Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Jawer-Dev/Aether-Hotel.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Install dependencies:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
-# Aether-Hotel
-# Aether-Hotel
+
+Run locally:
+
+```bash
+npm run dev
+```
